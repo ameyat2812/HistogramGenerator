@@ -14,8 +14,8 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: setup
-      run: sudo ./install-dependancies.sh
-      shell: bash
+      run: sudo apt-get update -y
+           sudo apt-get install -y g++ build-essential cmake clang-tools clang-format libgtest-dev libpng-dev
     - name: build
       run: cmake . && make
     
