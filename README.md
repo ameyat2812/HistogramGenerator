@@ -1,5 +1,5 @@
 # Setup
-`./install-dependancies.sh`
+`sudo ./install-dependancies.sh`
 
 # Building
 `cmake . && make`
