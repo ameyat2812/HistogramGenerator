@@ -14,7 +14,8 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: setup
-      run: pwd
+      run: ./install-dependancies.sh
+      shell: bash
     - name: build
       run: cmake . && make
     
