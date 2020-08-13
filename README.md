@@ -1,9 +1,9 @@
 # Setup
-'./install-dependancies.sh'
+`./install-dependancies.sh`
 
 # Building
-'cmake .'
-'make'
+`cmake .`
+`make`
 
 # Run
-'HistogramGenerator -i <input-filename.png> -o <output-filename>'
+`HistogramGenerator -i <input-filename.png> -o <output-filename>`
