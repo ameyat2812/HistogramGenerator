@@ -1,12 +1,13 @@
 file(GLOB SRCS *.cpp)
+find_package(GTest REQUIRED)
+include_directories(${gtest_SOURCE_DIR}/include ${gtest_SOURCE_DIR})
 
-ADD_EXECUTABLE(testHistogramGenerator ${SRCS})
+add_executable(testHistogramGenerator ${SRCS})
 
-TARGET_LINK_LIBRARIES(testHistogramGenerator
-    libgtest.a
+target_link_libraries(testHistogramGenerator
+    gtest
 	pthread
 	png
 )
-
 add_test(NAME testHistogramGenerator
          COMMAND testHistogramGenerator)
