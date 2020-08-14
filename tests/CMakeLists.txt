@@ -3,7 +3,7 @@ file(GLOB SRCS *.cpp)
 ADD_EXECUTABLE(testHistogramGenerator ${SRCS})
 
 TARGET_LINK_LIBRARIES(testHistogramGenerator
-    gtest
+    libgtest.a
 	pthread
 	png
 )
