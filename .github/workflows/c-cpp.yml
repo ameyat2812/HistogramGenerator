@@ -14,7 +14,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: debug
-      run: pkg-config --libs gtest
+      run: find /usr/. -name libgtest.a
     - name: setup
       run: sudo apt-get update -y && sudo apt-get install -y g++ build-essential cmake clang-tools clang-format libgtest-dev libpng-dev
     - name: build
