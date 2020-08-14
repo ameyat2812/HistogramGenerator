@@ -14,5 +14,8 @@ CMakeCache.txt
 .vs
 Makefile
 HistogramGenerator
-*.png
+./*.png
+
+# tests
+tests/testHistogramGenerator
 

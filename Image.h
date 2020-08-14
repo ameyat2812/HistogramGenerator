@@ -35,10 +35,14 @@ class PNGLibraryOperationError : public Error {
   PNGLibraryOperationError(const std::string& message) : Error(message) {}
 };
 
-typedef struct {
+typedef struct RGBPixel {
   uint8_t r;
   uint8_t g;
   uint8_t b;
+  
+  bool operator==(const RGBPixel rhs) const {
+    return (r == rhs.r && g == rhs.g && b == rhs.b);
+  }
 } RGBPixel;
 
 class RGBImage {

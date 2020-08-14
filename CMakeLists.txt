@@ -13,3 +13,4 @@ add_executable (HistogramGenerator "HistogramGenerator.cpp" "Image.h")
 
 target_link_libraries(HistogramGenerator png )
 
+add_subdirectory(tests)
